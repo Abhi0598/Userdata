@@ -1,0 +1,89 @@
+
+.header{
+  
+  box-shadow: #dedede 1px 1px 7px;
+  padding: 0px 20px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchTextField{
+  border-radius: 4px;
+  border-width: 0px;
+  padding: 6px 8px;
+  box-shadow: 0.5px 1px 5px #d4d4d4;
+}
+.searchTextField::placeholder{
+  color: rgb(212, 209, 209);
+}
+.searchTextField:focus{
+  border: none!important;
+  outline: none!important;
+}
+.Nouser{
+  margin: 25px;
+  font-weight: 500;
+}
+
+.userCardWrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.userCard{
+  box-shadow: 0px 0px 9px #cfcfcf;
+  margin: 20px 10px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+.nat{
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: lightgrey;
+}
+
+.roundimg{
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.removedptagmargin{
+ margin: 5px 0px;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .userCard {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .userCard{
+    width: 40%;
+    margin: 20px 10px; 
+  }
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px){
+.userCard{
+  width: 40%;
+}
+}
+
+
+@media(min-width: 1281px) {
+  .userCard{
+    margin: 20px 10px;
+    width: 28%;
+  }
+}
+
